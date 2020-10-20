@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Buenos Aires Weather</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <!-- Google Fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@1,500&display=swap" rel="stylesheet">
+    <!-- Api icon -->
+    <link id="micon" rel="icon" href="" type="image/x-icon">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Buenos Aires</h1>
+            <div class="main oculto">
+                <h2>Weather</h2>
+                <div id="icon"> 
+                    <img id="wicon" src="" alt="">
+                </div>
+                <h3 class="clima-actual"><span id="clima-actual"></span></h3>
+                <h3>T° <span id="temperatura"></span></h3>
+                <ul>
+                    <li id="st">Real Feel°: <span></span> </li>
+                    <li id="viento">Wind speed: <span></span></li>
+                    <li id="humedad">Humidity: <span></span></li>
+                    <li id ="presion">Pressure: <span></span></li>
+                    <li id="visibility">Visibility: <span></span></li>
+                    <li id="min">Min Temp°: <span></span></li>
+                    <li id="max">Max Temp°: <span></span></li>
+                </ul><br>
+            </div>
+        <button id="btn">Ver clima</button>
+    </div>
+
+    <footer>
+        <p>*mb: milibars</p>
+    </footer>
+    <script src='js/main.js'></script>
+</body>
+</html>

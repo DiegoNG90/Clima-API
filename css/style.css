@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: cornflowerblue;
+}
+.contenedor{
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Piazzolla', serif;
+    
+}
+li{
+    text-decoration: none;
+    margin-top: 1.5rem;
+}
+
+footer{
+    text-align: center;
+    margin-top: 2.5rem;
+    font-style: italic;
+    font-family: 'Piazzolla', serif;
+}
+#wicon{
+    width: 5%;
+
+}
+.clima-actual{
+    margin-bottom: 1.5rem;
+}
+#btn{
+    background-color: crimson;
+    color: darkkhaki;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 12px 22px;
+}
+
+.oculto{
+    display: none;
+}
+
