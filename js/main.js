@@ -3,7 +3,6 @@ console.log("Canal API linkeado");
 let api;
 
 function peticionClima(){
-    // fetch('http://api.openweathermap.org/data/2.5/weather?q=London,uk&units=metric&APPID=5b21a90adc533c87f4debbcc0fe00773')
     let ciudad = document.querySelector('#user-city').value;
     document.querySelector('#city-display').textContent = ciudad;
 
@@ -36,8 +35,8 @@ function peticionData(data){
     document.querySelector('#clima-actual').textContent = api.weather[0].main;
     document.querySelector('#temperatura').textContent = kelvinACelcius(api.main.temp);
 
-    document.querySelector('#wicon').setAttribute('src', `http://openweathermap.org/img/w/${api.weather[0].icon}.png`);
-    document.querySelector('#micon').setAttribute('href', `http://openweathermap.org/img/w/${api.weather[0].icon}.png`);
+    document.querySelector('#wicon').setAttribute('src', `https://openweathermap.org/img/w/${api.weather[0].icon}.png`);
+    document.querySelector('#micon').setAttribute('href', `https://openweathermap.org/img/w/${api.weather[0].icon}.png`);
 
     document.querySelector('#st').textContent =  `ST: ${kelvinACelcius(api.main.feels_like)} `;
     document.querySelector('#viento').textContent = `Wind: ${api.wind.speed} km/h`;
