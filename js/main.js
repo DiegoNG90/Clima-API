@@ -43,8 +43,8 @@ function peticionData(data){
     document.querySelector('#humedad').textContent =  `Humidity: ${api.main.humidity}%`;
     document.querySelector('#presion').textContent =  `Pressure: ${api.main.pressure} mb*`;
     document.querySelector('#visibility').textContent =  `Visibility: ${api.visibility} meters`;
-    document.querySelector('#min').textContent =  kelvinACelcius(api.main.temp_min);
-    document.querySelector('#max').textContent =  kelvinACelcius(api.main.temp_max);
+    document.querySelector('#min').textContent =  `Min Temp°: ${kelvinACelcius(api.main.temp_min)}`;
+    document.querySelector('#max').textContent =  `Max Temp°: ${kelvinACelcius(api.main.temp_max)}`;
 }
 
 
